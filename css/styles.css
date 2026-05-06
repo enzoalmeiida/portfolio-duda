@@ -1,0 +1,147 @@
+/* TIPOGRAFIA PERSONALIZADA */
+
+/* Usar Merriweather para títulos (serif elegante) */
+.font-serif {
+    font-family: 'Merriweather', serif;
+}
+
+/* Usar Poppins para corpo (sans-serif geométrico) */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-sans {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* UTILITÁRIOS PERSONALIZADOS */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover suave para links */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Remover outline padrão */
+button:focus,
+a:focus {
+    outline: none;
+}
+
+/* ESPAÇAMENTO MINIMALISTA */
+
+/* White Space management */
+.hero-whitespace {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+/* GRID MASONRY - Pode ser aprimorado com CSS Grid avançado */
+
+/* Para melhor suporte a Masonry em navegadores antigos */
+@supports (display: grid) {
+    .masonry-grid {
+        display: grid;
+        grid-auto-rows: max-content;
+    }
+}
+
+/* ANIMAÇÕES */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effect suave para cards de projeto */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+/* TIPOGRAFIA RESPONSIVA */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* REFINAMENTOS VISUAIS */
+
+/* Remover espaço extra em volta de imagens */
+img {
+    display: block;
+}
+
+/* Melhorar visibilidade de linhas decorativas */
+.divider-line {
+    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    height: 2px;
+}
+
+/* EFEITO DE FOCO ACESSÍVEL */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* SUPORTE A TEMA DARK (opcional para futuro) */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+/* Refinamentos de bordas e espaçamento */
+.border-subtle {
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Efeito de vidro frosted (glassmorphism) para header */
+header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsividade de espaçamento */
+@media (max-width: 640px) {
+    section {
+        padding: 1.5rem;
+    }
+}

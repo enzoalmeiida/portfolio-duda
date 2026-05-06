@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda - Publicidade & Artes Visuais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-neutral-50 text-neutral-900 font-sans">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full bg-neutral-50 bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-200 border-opacity-20">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex justify-between items-center">
+            <!-- Logo/Nome -->
+            <div class="font-serif text-2xl lg:text-3xl font-bold text-neutral-900 tracking-tight">
+                Duda
+            </div>
+            
+            <!-- Menu -->
+            <ul class="hidden md:flex gap-12 text-sm font-medium text-neutral-700">
+                <li><a href="#trabalhos" class="hover:text-neutral-900 transition-colors duration-300">Trabalhos</a></li>
+                <li><a href="#sobre" class="hover:text-neutral-900 transition-colors duration-300">Sobre</a></li>
+                <li><a href="#contato" class="hover:text-neutral-900 transition-colors duration-300">Contato</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-neutral-900">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-50 border-t border-neutral-200 border-opacity-20 py-4">
+            <ul class="flex flex-col gap-4 px-6 text-sm font-medium text-neutral-700">
+                <li><a href="#trabalhos" class="block hover:text-neutral-900 transition-colors">Trabalhos</a></li>
+                <li><a href="#sobre" class="block hover:text-neutral-900 transition-colors">Sobre</a></li>
+                <li><a href="#contato" class="block hover:text-neutral-900 transition-colors">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-32 pb-24 px-6 lg:px-8 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <!-- Espaço em branco intencional -->
+            <div class="h-12 lg:h-24"></div>
+            
+            <!-- Frase de Impacto -->
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight tracking-tight">
+                <span class="text-neutral-900">Estratégia</span><br>
+                <span class="text-neutral-500">encontra</span><br>
+                <span class="text-neutral-900">Estética</span>
+            </h1>
+
+            <p class="text-lg lg:text-xl text-neutral-600 font-light max-w-2xl mx-auto leading-relaxed">
+                Campanhas visuais que transcendem. Projetos que comunicam, inspiram e transformam.
+            </p>
+
+            <!-- Botão CTA -->
+            <div class="pt-6">
+                <a href="#trabalhos" class="inline-block border border-neutral-900 px-8 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-900 hover:text-neutral-50 transition-all duration-300">
+                    Explorar Projetos
+                </a>
+            </div>
+
+            <!-- Espaço em branco -->
+            <div class="h-16"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <section id="trabalhos" class="py-24 px-6 lg:px-8 bg-neutral-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Título da Seção -->
+            <div class="mb-16">
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-4">Trabalhos</h2>
+                <div class="w-16 h-1 bg-neutral-900"></div>
+            </div>
+
+            <!-- Grid Masonry -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
+                
+                <!-- Projeto 1 -->
+                <div class="group lg:col-span-2 lg:row-span-2">
+                    <div class="relative bg-gradient-to-br from-neutral-300 to-neutral-400 h-96 lg:h-full overflow-hidden cursor-pointer">
+                        <!-- Placeholder Image -->
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 01</span>
+                        </div>
+                        
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-2xl font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Identidade Visual Marca A
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="group">
+                    <div class="relative bg-neutral-300 h-64 overflow-hidden cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 02</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-lg font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+                                Poster Série
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="group">
+                    <div class="relative bg-neutral-300 h-64 overflow-hidden cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 03</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-lg font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+                                Direção de Arte
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="group lg:col-span-2">
+                    <div class="relative bg-neutral-300 h-64 overflow-hidden cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 04</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+                                Branding Completo
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="group">
+                    <div class="relative bg-neutral-300 h-64 overflow-hidden cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 05</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-lg font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+                                Fotografia Conceitual
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="group">
+                    <div class="relative bg-neutral-300 h-64 overflow-hidden cursor-pointer">
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Campanha 06</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                            <h3 class="text-white text-lg font-serif font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+                                Design Gráfico
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="py-24 px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Foto -->
+                <div class="order-2 lg:order-1">
+                    <div class="relative bg-neutral-200 aspect-square overflow-hidden">
+                        <!-- Placeholder para foto -->
+                        <div class="w-full h-full bg-gradient-to-br from-neutral-300 to-neutral-400 flex items-center justify-center">
+                            <span class="text-neutral-500 text-sm font-light">Foto Profissional</span>
+                        </div>
+                        
+                        <!-- Elemento decorativo -->
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 border border-neutral-200 pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Texto -->
+                <div class="order-1 lg:order-2 space-y-6">
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">Sobre</h2>
+                    <div class="w-12 h-1 bg-neutral-900"></div>
+                    
+                    <p class="text-lg text-neutral-700 leading-relaxed font-light">
+                        Sou uma diretora criativa com formação em Publicidade e Propaganda e especialização em Artes Visuais. 
+                    </p>
+
+                    <p class="text-lg text-neutral-700 leading-relaxed font-light">
+                        Minha abordagem combina estratégia comunicativa com sensibilidade estética, criando campanhas que não apenas vendem, mas também transformam percepções e conectam emocionalmente com as pessoas.
+                    </p>
+
+                    <p class="text-lg text-neutral-700 leading-relaxed font-light">
+                        Acredito que design é comunicação visual inteligente. Cada projeto é uma oportunidade de contar histórias significativas através de formas, cores e conceitos bem pensados.
+                    </p>
+
+                    <div class="pt-4">
+                        <a href="#contato" class="inline-block text-neutral-900 font-medium hover:text-neutral-600 transition-colors duration-300">
+                            Conversar comigo →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO / FOOTER -->
+    <section id="contato" class="py-32 px-6 lg:px-8 bg-neutral-50 border-t border-neutral-200 border-opacity-20">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            
+            <!-- Heading -->
+            <div class="space-y-4">
+                <h2 class="text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
+                    Vamos criar algo juntos?
+                </h2>
+                <p class="text-lg text-neutral-600 font-light max-w-2xl mx-auto">
+                    Estou aberta a novas ideias, colaborações e projetos desafiadores.
+                </p>
+            </div>
+
+            <!-- Email em destaque -->
+            <div class="py-8">
+                <a href="mailto:contato@duda.com" class="text-3xl md:text-4xl font-serif font-bold text-neutral-900 hover:text-neutral-600 transition-colors duration-300 break-all">
+                    contato@duda.com
+                </a>
+            </div>
+
+            <!-- Separador -->
+            <div class="w-24 h-1 bg-neutral-300 mx-auto"></div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-8 pt-8">
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:text-neutral-900 hover:border-neutral-900 transition-all duration-300">
+                    <i class="fab fa-behance text-lg"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:text-neutral-900 hover:border-neutral-900 transition-all duration-300">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:text-neutral-900 hover:border-neutral-900 transition-all duration-300">
+                    <i class="fab fa-linkedin text-lg"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-12 border-t border-neutral-200 border-opacity-20">
+                <p class="text-sm text-neutral-500 font-light">
+                    © 2024 Duda. Todos os direitos reservados.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
