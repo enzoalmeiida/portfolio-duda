@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Duda Barreto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-neutral-50 text-neutral-900 font-sans">
+    <header class="sticky top-0 z-50 border-b border-neutral-200/70 bg-neutral-50/85 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
+            <a href="index.html" class="brand-script text-3xl leading-none">Duda Barreto</a>
+            <div class="hidden items-center gap-10 md:flex">
+                <a href="projetos.html" class="text-sm font-medium text-neutral-900">Trabalhos</a>
+                <a href="sobre.html" class="text-sm font-medium text-neutral-700 transition-colors hover:text-neutral-900">Sobre</a>
+                <a href="contato.html" class="text-sm font-medium text-neutral-700 transition-colors hover:text-neutral-900">Contato</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-neutral-900" aria-label="Abrir menu">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden border-t border-neutral-200/70 bg-neutral-50 px-6 py-4 md:hidden">
+            <div class="flex flex-col gap-4 text-sm font-medium text-neutral-700">
+                <a href="projetos.html" class="text-neutral-900">Trabalhos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero reveal-on-scroll mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+            <div class="max-w-3xl space-y-6">
+                <p class="text-xs uppercase tracking-[0.35em] text-neutral-500">Trabalhos</p>
+                <h1 class="font-serif text-5xl font-black leading-tight md:text-6xl">Projetos separados por linguagem para não misturar intenção, contexto e estética.</h1>
+                <p class="max-w-2xl text-lg leading-relaxed text-neutral-600">A curadoria foi dividida entre Publicidade e Propaganda e Artes Visuais, porque cada frente pede ritmos, cores e narrativas diferentes.</p>
+            </div>
+        </section>
+
+        <section id="publicidade" class="reveal-on-scroll mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+            <div class="mb-8 flex items-center gap-4">
+                <div class="accent-line h-1 w-16 rounded-full"></div>
+                <div>
+                    <p class="text-xs uppercase tracking-[0.35em] text-neutral-500">Categoria 01</p>
+                    <h2 class="font-serif text-3xl font-bold">Publicidade e Propaganda</h2>
+                    <p class="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-600">Campanhas, identidade visual e peças voltadas para comunicação com estratégia e presença.</p>
+                </div>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-2">
+                <article class="soft-card rounded-[2rem] bg-white p-6">
+                    <div class="project-tile tint-publicidade min-h-[17rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Campanha 01</span>
+                        <h3 class="mt-6 max-w-md font-serif text-3xl font-bold leading-tight text-neutral-50">Lançamento de marca com foco em posicionamento e conversão.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Conceito de campanha, identidade visual e direção de peças para mídia digital e impresso.</p>
+                </article>
+                <article class="soft-card rounded-[2rem] bg-white p-6">
+                    <div class="project-tile tint-contact min-h-[17rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Campanha 02</span>
+                        <h3 class="mt-6 max-w-md font-serif text-3xl font-bold leading-tight">Peças para rede social e performance com linguagem editorial.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Postagens, anúncios, desdobramentos de campanha e adaptabilidade de formatos.</p>
+                </article>
+                <article class="soft-card rounded-[2rem] bg-white p-6">
+                    <div class="project-tile tint-publicidade min-h-[17rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Campanha 03</span>
+                        <h3 class="mt-6 max-w-md font-serif text-3xl font-bold leading-tight text-neutral-50">Branding de produto com sistema visual e linguagem própria.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Pesquisa visual, tom de voz, assets de campanha e aplicação em materiais de marca.</p>
+                </article>
+                <article class="soft-card rounded-[2rem] bg-white p-6">
+                    <div class="project-tile tint-contact min-h-[17rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Campanha 04</span>
+                        <h3 class="mt-6 max-w-md font-serif text-3xl font-bold leading-tight">Direção de arte para lançamento com foco em conceito e consistência.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Desenvolvimento visual completo para múltiplos pontos de contato.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="artes-visuais" class="reveal-on-scroll mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+            <div class="mb-8 flex items-center gap-4">
+                <div class="accent-line h-1 w-16 rounded-full"></div>
+                <div>
+                    <p class="text-xs uppercase tracking-[0.35em] text-neutral-500">Categoria 02</p>
+                    <h2 class="font-serif text-3xl font-bold">Artes Visuais</h2>
+                        <p class="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-600">Pinturas, fotografias, estudos de composição e peças em que a emoção vem antes da função.</p>
+                </div>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <article class="soft-card rounded-[2rem] bg-white p-6 lg:col-span-2">
+                    <div class="project-tile tint-artes min-h-[20rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Obra 01</span>
+                            <h3 class="mt-6 max-w-xl font-serif text-3xl font-bold leading-tight">Série fotográfica sobre textura, luz natural e silêncio.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Uma linguagem mais sensorial, com composição experimental e foco autoral.</p>
+                </article>
+                <article class="soft-card rounded-[2rem] bg-white p-6">
+                    <div class="project-tile tint-sage min-h-[20rem] rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(221,231,216,0.95),rgba(219,232,242,0.9))] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Obra 02</span>
+                        <h3 class="mt-6 max-w-xs font-serif text-3xl font-bold leading-tight">Composição gráfica com camadas, forma e cor.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Exploração de ritmo visual em peças estáticas e experimentais.</p>
+                </article>
+                <article class="soft-card rounded-[2rem] bg-white p-6 lg:col-span-1">
+                    <div class="project-tile tint-publicidade min-h-[18rem] rounded-[1.75rem] p-6">
+                        <span class="soft-chip inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-neutral-700">Obra 03</span>
+                            <h3 class="mt-6 max-w-xs font-serif text-3xl font-bold leading-tight text-neutral-50">Instalação visual com recorte editorial.</h3>
+                    </div>
+                    <p class="mt-5 text-sm leading-relaxed text-neutral-600">Projeto híbrido entre arte e comunicação visual para exposição e portfólio.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

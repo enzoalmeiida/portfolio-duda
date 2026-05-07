@@ -1,13 +1,42 @@
 /* TIPOGRAFIA PERSONALIZADA */
 
+:root {
+    --color-primary-bg: #f5e8d9;
+    --color-secondary-element: #607d3a;
+    --color-text: #faf0e6;
+    --color-text-dark: #4d4132;
+    --color-surface: #efe0cd;
+    --color-surface-strong: #ddc7aa;
+    --color-white: #ffffff;
+
+    --site-bg: var(--color-primary-bg);
+    --site-text: var(--color-text-dark);
+    --site-muted: #726556;
+    --site-line: rgba(96, 125, 58, 0.18);
+    --site-olive: var(--color-secondary-element);
+    --site-olive-deep: #4b612d;
+    --site-cream: var(--color-text);
+    --site-sand: var(--color-surface);
+    --site-peach: #e4c3a7;
+    --site-sky: #d7e1dd;
+}
+
 /* Usar Merriweather para títulos (serif elegante) */
 .font-serif {
     font-family: 'Merriweather', serif;
 }
 
+.brand-script {
+    font-family: 'Allura', cursive;
+    letter-spacing: 0.01em;
+    color: var(--color-secondary-element);
+}
+
 /* Usar Poppins para corpo (sans-serif geométrico) */
 body {
     font-family: 'Poppins', sans-serif;
+    color: var(--site-text);
+    background: var(--color-primary-bg);
 }
 
 .font-sans {
@@ -131,6 +160,124 @@ a:focus-visible {
 /* Refinamentos de bordas e espaçamento */
 .border-subtle {
     border-color: rgba(0, 0, 0, 0.08);
+}
+
+.shell-panel {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(96, 125, 58, 0.12);
+}
+
+.accent-line {
+    background: var(--color-secondary-element);
+}
+
+.soft-chip {
+    background: var(--color-secondary-element);
+    border: 1px solid var(--color-secondary-element);
+    color: var(--color-text);
+}
+
+.soft-card {
+    background: rgba(255, 250, 244, 0.92);
+    border: 1px solid rgba(96, 125, 58, 0.12);
+}
+
+.project-tile {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-4px);
+}
+
+.tint-publicidade {
+    background: var(--color-secondary-element);
+}
+
+.tint-artes {
+    background: var(--color-surface-strong);
+}
+
+.tint-sage {
+    background: #7b8a54;
+}
+
+.tint-contact {
+    background: var(--color-surface);
+}
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-primary-bg);
+    background-image: url('../assets/images/hero.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-hero::before,
+.page-hero::after {
+    content: '';
+    position: absolute;
+    inset: auto;
+    border-radius: 9999px;
+    pointer-events: none;
+}
+
+.hero-overlay {
+    background: rgba(245, 232, 217, 0.16);
+}
+
+.page-hero .reveal-on-scroll,
+.page-hero h1,
+.page-hero p,
+.page-hero a,
+.page-hero .profile-badge {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero::before {
+    width: 22rem;
+    height: 22rem;
+    top: -8rem;
+    right: -6rem;
+    background: rgba(96, 125, 58, 0.08);
+}
+
+.page-hero::after {
+    width: 18rem;
+    height: 18rem;
+    left: -5rem;
+    bottom: -8rem;
+    background: rgba(250, 240, 230, 0.28);
+}
+
+.page-hero h1 {
+    color: var(--site-olive-deep);
+}
+
+.page-hero p {
+    color: var(--color-text-dark);
+}
+
+.color-band {
+    background: var(--color-secondary-element);
+}
+
+.profile-badge {
+    background: rgba(96, 125, 58, 0.1);
+    border: 1px solid rgba(96, 125, 58, 0.18);
+    color: var(--site-olive-deep);
+}
+
+.home-hero-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Efeito de vidro frosted (glassmorphism) para header */
